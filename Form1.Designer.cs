@@ -79,6 +79,7 @@
             this.btnOrder.TabIndex = 1;
             this.btnOrder.Text = "주문하기";
             this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnClear
             // 
@@ -92,6 +93,7 @@
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "초기화";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // lbTotalAmount
             // 
