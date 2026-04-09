@@ -76,7 +76,7 @@
             this.btnOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(136, 47);
-            this.btnOrder.TabIndex = 1;
+            this.btnOrder.TabIndex = 3;
             this.btnOrder.Text = "주문하기";
             this.btnOrder.UseVisualStyleBackColor = false;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
@@ -90,7 +90,7 @@
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(136, 47);
-            this.btnClear.TabIndex = 2;
+            this.btnClear.TabIndex = 4;
             this.btnClear.Text = "초기화";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -103,7 +103,7 @@
             this.lbTotalAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTotalAmount.Name = "lbTotalAmount";
             this.lbTotalAmount.Size = new System.Drawing.Size(356, 72);
-            this.lbTotalAmount.TabIndex = 3;
+            this.lbTotalAmount.TabIndex = 0;
             this.lbTotalAmount.Text = "총금액: 0원";
             this.lbTotalAmount.Click += new System.EventHandler(this.lbTotalAmount_Click);
             // 
@@ -116,7 +116,7 @@
             this.rdoBuger.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rdoBuger.Name = "rdoBuger";
             this.rdoBuger.Size = new System.Drawing.Size(103, 28);
-            this.rdoBuger.TabIndex = 4;
+            this.rdoBuger.TabIndex = 0;
             this.rdoBuger.TabStop = true;
             this.rdoBuger.Text = "햄버거";
             this.rdoBuger.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Size = new System.Drawing.Size(330, 369);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "메뉴 선택";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -183,7 +183,7 @@
             this.rdoChickenBuger.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rdoChickenBuger.Name = "rdoChickenBuger";
             this.rdoChickenBuger.Size = new System.Drawing.Size(128, 28);
-            this.rdoChickenBuger.TabIndex = 9;
+            this.rdoChickenBuger.TabIndex = 2;
             this.rdoChickenBuger.TabStop = true;
             this.rdoChickenBuger.Text = "치킨버거";
             this.rdoChickenBuger.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@
             this.rdoBulgogiBuger.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rdoBulgogiBuger.Name = "rdoBulgogiBuger";
             this.rdoBulgogiBuger.Size = new System.Drawing.Size(153, 28);
-            this.rdoBulgogiBuger.TabIndex = 8;
+            this.rdoBulgogiBuger.TabIndex = 1;
             this.rdoBulgogiBuger.TabStop = true;
             this.rdoBulgogiBuger.Text = "불고기버거";
             this.rdoBulgogiBuger.UseVisualStyleBackColor = true;
@@ -223,7 +223,7 @@
             this.chkPotato.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chkPotato.Name = "chkPotato";
             this.chkPotato.Size = new System.Drawing.Size(129, 28);
-            this.chkPotato.TabIndex = 7;
+            this.chkPotato.TabIndex = 0;
             this.chkPotato.Text = "감자튀김";
             this.chkPotato.UseVisualStyleBackColor = true;
             // 
@@ -236,7 +236,7 @@
             this.chkCola.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chkCola.Name = "chkCola";
             this.chkCola.Size = new System.Drawing.Size(79, 28);
-            this.chkCola.TabIndex = 12;
+            this.chkCola.TabIndex = 1;
             this.chkCola.Text = "콜라";
             this.chkCola.UseVisualStyleBackColor = true;
             this.chkCola.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
@@ -250,7 +250,7 @@
             this.chkCheese.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chkCheese.Name = "chkCheese";
             this.chkCheese.Size = new System.Drawing.Size(154, 28);
-            this.chkCheese.TabIndex = 13;
+            this.chkCheese.TabIndex = 2;
             this.chkCheese.Text = "치즈　추가";
             this.chkCheese.UseVisualStyleBackColor = true;
             // 
@@ -263,7 +263,7 @@
             this.chkSauce.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chkSauce.Name = "chkSauce";
             this.chkSauce.Size = new System.Drawing.Size(154, 28);
-            this.chkSauce.TabIndex = 14;
+            this.chkSauce.TabIndex = 3;
             this.chkSauce.Text = "소스　추가";
             this.chkSauce.UseVisualStyleBackColor = true;
             // 
@@ -280,7 +280,7 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Size = new System.Drawing.Size(192, 260);
-            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "추가 옵션";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
@@ -296,13 +296,14 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Size = new System.Drawing.Size(404, 410);
-            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "주문 내역";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnOrder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 499);
