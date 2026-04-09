@@ -34,21 +34,21 @@
             this.lbTotalAmount = new System.Windows.Forms.Label();
             this.rdoBuger = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rdoChickenBuger = new System.Windows.Forms.RadioButton();
+            this.rdoBulgogiBuger = new System.Windows.Forms.RadioButton();
             this.lbOrders = new System.Windows.Forms.ListBox();
             this.chkPotato = new System.Windows.Forms.CheckBox();
-            this.rdoBulgogiBuger = new System.Windows.Forms.RadioButton();
-            this.rdoChickenBuger = new System.Windows.Forms.RadioButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chkCola = new System.Windows.Forms.CheckBox();
             this.chkCheese = new System.Windows.Forms.CheckBox();
             this.chkSauce = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -59,7 +59,7 @@
             this.lbAppName.AutoSize = true;
             this.lbAppName.Font = new System.Drawing.Font("굴림", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbAppName.ForeColor = System.Drawing.Color.Blue;
-            this.lbAppName.Location = new System.Drawing.Point(33, 29);
+            this.lbAppName.Location = new System.Drawing.Point(13, 22);
             this.lbAppName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAppName.Name = "lbAppName";
             this.lbAppName.Size = new System.Drawing.Size(510, 56);
@@ -97,13 +97,12 @@
             // 
             // lbTotalAmount
             // 
-            this.lbTotalAmount.AutoSize = true;
             this.lbTotalAmount.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbTotalAmount.ForeColor = System.Drawing.Color.Blue;
-            this.lbTotalAmount.Location = new System.Drawing.Point(84, 355);
+            this.lbTotalAmount.Location = new System.Drawing.Point(8, 335);
             this.lbTotalAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTotalAmount.Name = "lbTotalAmount";
-            this.lbTotalAmount.Size = new System.Drawing.Size(189, 32);
+            this.lbTotalAmount.Size = new System.Drawing.Size(356, 72);
             this.lbTotalAmount.TabIndex = 3;
             this.lbTotalAmount.Text = "총금액: 0원";
             this.lbTotalAmount.Click += new System.EventHandler(this.lbTotalAmount_Click);
@@ -132,7 +131,7 @@
             this.groupBox1.Controls.Add(this.rdoBulgogiBuger);
             this.groupBox1.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(31, 118);
+            this.groupBox1.Location = new System.Drawing.Point(3, 111);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -142,44 +141,38 @@
             this.groupBox1.Text = "메뉴 선택";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // lbOrders
+            // pictureBox2
             // 
-            this.lbOrders.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbOrders.FormattingEnabled = true;
-            this.lbOrders.ItemHeight = 27;
-            this.lbOrders.Location = new System.Drawing.Point(6, 31);
-            this.lbOrders.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.lbOrders.Name = "lbOrders";
-            this.lbOrders.Size = new System.Drawing.Size(333, 301);
-            this.lbOrders.TabIndex = 0;
-            this.lbOrders.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.pictureBox2.Image = global::BurgerKiosk.Properties.Resources.햄버거;
+            this.pictureBox2.Location = new System.Drawing.Point(154, 24);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 104);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
-            // chkPotato
+            // pictureBox3
             // 
-            this.chkPotato.AutoSize = true;
-            this.chkPotato.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.chkPotato.ForeColor = System.Drawing.Color.Black;
-            this.chkPotato.Location = new System.Drawing.Point(15, 46);
-            this.chkPotato.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.chkPotato.Name = "chkPotato";
-            this.chkPotato.Size = new System.Drawing.Size(129, 28);
-            this.chkPotato.TabIndex = 7;
-            this.chkPotato.Text = "감자튀김";
-            this.chkPotato.UseVisualStyleBackColor = true;
+            this.pictureBox3.Image = global::BurgerKiosk.Properties.Resources.치킨버거;
+            this.pictureBox3.Location = new System.Drawing.Point(154, 261);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(164, 102);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
             // 
-            // rdoBulgogiBuger
+            // pictureBox1
             // 
-            this.rdoBulgogiBuger.AutoSize = true;
-            this.rdoBulgogiBuger.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoBulgogiBuger.ForeColor = System.Drawing.Color.Black;
-            this.rdoBulgogiBuger.Location = new System.Drawing.Point(6, 174);
-            this.rdoBulgogiBuger.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rdoBulgogiBuger.Name = "rdoBulgogiBuger";
-            this.rdoBulgogiBuger.Size = new System.Drawing.Size(153, 28);
-            this.rdoBulgogiBuger.TabIndex = 8;
-            this.rdoBulgogiBuger.TabStop = true;
-            this.rdoBulgogiBuger.Text = "불고기버거";
-            this.rdoBulgogiBuger.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::BurgerKiosk.Properties.Resources.불고기버거;
+            this.pictureBox1.Location = new System.Drawing.Point(154, 142);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(164, 97);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // rdoChickenBuger
             // 
@@ -195,38 +188,44 @@
             this.rdoChickenBuger.Text = "치킨버거";
             this.rdoChickenBuger.UseVisualStyleBackColor = true;
             // 
-            // pictureBox3
+            // rdoBulgogiBuger
             // 
-            this.pictureBox3.Image = global::BurgerKiosk.Properties.Resources.치킨버거;
-            this.pictureBox3.Location = new System.Drawing.Point(154, 261);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(164, 102);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
+            this.rdoBulgogiBuger.AutoSize = true;
+            this.rdoBulgogiBuger.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoBulgogiBuger.ForeColor = System.Drawing.Color.Black;
+            this.rdoBulgogiBuger.Location = new System.Drawing.Point(6, 174);
+            this.rdoBulgogiBuger.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rdoBulgogiBuger.Name = "rdoBulgogiBuger";
+            this.rdoBulgogiBuger.Size = new System.Drawing.Size(153, 28);
+            this.rdoBulgogiBuger.TabIndex = 8;
+            this.rdoBulgogiBuger.TabStop = true;
+            this.rdoBulgogiBuger.Text = "불고기버거";
+            this.rdoBulgogiBuger.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // lbOrders
             // 
-            this.pictureBox2.Image = global::BurgerKiosk.Properties.Resources.햄버거;
-            this.pictureBox2.Location = new System.Drawing.Point(154, 24);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 104);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
+            this.lbOrders.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbOrders.FormattingEnabled = true;
+            this.lbOrders.ItemHeight = 27;
+            this.lbOrders.Location = new System.Drawing.Point(4, 31);
+            this.lbOrders.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.lbOrders.Name = "lbOrders";
+            this.lbOrders.Size = new System.Drawing.Size(400, 301);
+            this.lbOrders.TabIndex = 0;
+            this.lbOrders.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // pictureBox1
+            // chkPotato
             // 
-            this.pictureBox1.Image = global::BurgerKiosk.Properties.Resources.불고기버거;
-            this.pictureBox1.Location = new System.Drawing.Point(154, 142);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 97);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.chkPotato.AutoSize = true;
+            this.chkPotato.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.chkPotato.ForeColor = System.Drawing.Color.Black;
+            this.chkPotato.Location = new System.Drawing.Point(15, 46);
+            this.chkPotato.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.chkPotato.Name = "chkPotato";
+            this.chkPotato.Size = new System.Drawing.Size(129, 28);
+            this.chkPotato.TabIndex = 7;
+            this.chkPotato.Text = "감자튀김";
+            this.chkPotato.UseVisualStyleBackColor = true;
             // 
             // chkCola
             // 
@@ -276,7 +275,7 @@
             this.groupBox2.Controls.Add(this.chkCheese);
             this.groupBox2.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.ForeColor = System.Drawing.Color.Red;
-            this.groupBox2.Location = new System.Drawing.Point(374, 118);
+            this.groupBox2.Location = new System.Drawing.Point(335, 111);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -292,11 +291,11 @@
             this.groupBox3.Controls.Add(this.lbTotalAmount);
             this.groupBox3.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.ForeColor = System.Drawing.Color.Red;
-            this.groupBox3.Location = new System.Drawing.Point(580, 12);
+            this.groupBox3.Location = new System.Drawing.Point(531, 12);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox3.Size = new System.Drawing.Size(345, 410);
+            this.groupBox3.Size = new System.Drawing.Size(404, 410);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "주문 내역";
@@ -319,13 +318,12 @@
             this.Text = "Buger Kiosk";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
