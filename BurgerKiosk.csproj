@@ -89,5 +89,8 @@
   <ItemGroup>
     <None Include="Resources\치킨버거.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\백지헌.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

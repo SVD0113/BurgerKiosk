@@ -63,6 +63,16 @@ namespace BurgerKiosk.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 백지헌 {
+            get {
+                object obj = ResourceManager.GetObject("백지헌", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 불고기버거 {
             get {
                 object obj = ResourceManager.GetObject("불고기버거", resourceCulture);

@@ -57,8 +57,9 @@
             // lbAppName
             // 
             this.lbAppName.AutoSize = true;
+            this.lbAppName.BackColor = System.Drawing.Color.Transparent;
             this.lbAppName.Font = new System.Drawing.Font("굴림", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbAppName.ForeColor = System.Drawing.Color.Blue;
+            this.lbAppName.ForeColor = System.Drawing.Color.White;
             this.lbAppName.Location = new System.Drawing.Point(13, 22);
             this.lbAppName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAppName.Name = "lbAppName";
@@ -69,9 +70,9 @@
             // 
             // btnOrder
             // 
-            this.btnOrder.BackColor = System.Drawing.Color.Lime;
+            this.btnOrder.BackColor = System.Drawing.Color.Transparent;
             this.btnOrder.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnOrder.ForeColor = System.Drawing.Color.White;
+            this.btnOrder.ForeColor = System.Drawing.Color.Red;
             this.btnOrder.Location = new System.Drawing.Point(626, 440);
             this.btnOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnOrder.Name = "btnOrder";
@@ -83,9 +84,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.Red;
+            this.btnClear.BackColor = System.Drawing.Color.Transparent;
             this.btnClear.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.ForeColor = System.Drawing.Color.Red;
             this.btnClear.Location = new System.Drawing.Point(782, 440);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnClear.Name = "btnClear";
@@ -98,7 +99,7 @@
             // lbTotalAmount
             // 
             this.lbTotalAmount.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbTotalAmount.ForeColor = System.Drawing.Color.Blue;
+            this.lbTotalAmount.ForeColor = System.Drawing.Color.Red;
             this.lbTotalAmount.Location = new System.Drawing.Point(8, 335);
             this.lbTotalAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTotalAmount.Name = "lbTotalAmount";
@@ -111,7 +112,7 @@
             // 
             this.rdoBuger.AutoSize = true;
             this.rdoBuger.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoBuger.ForeColor = System.Drawing.Color.Black;
+            this.rdoBuger.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rdoBuger.Location = new System.Drawing.Point(0, 64);
             this.rdoBuger.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rdoBuger.Name = "rdoBuger";
@@ -120,17 +121,20 @@
             this.rdoBuger.TabStop = true;
             this.rdoBuger.Text = "햄버거";
             this.rdoBuger.UseVisualStyleBackColor = true;
+            this.rdoBuger.CheckedChanged += new System.EventHandler(this.rdoBuger_CheckedChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.rdoBuger);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.rdoChickenBuger);
             this.groupBox1.Controls.Add(this.rdoBulgogiBuger);
-            this.groupBox1.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Red;
+            this.groupBox1.Font = new System.Drawing.Font("굴림", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(3, 111);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
@@ -178,7 +182,7 @@
             // 
             this.rdoChickenBuger.AutoSize = true;
             this.rdoChickenBuger.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoChickenBuger.ForeColor = System.Drawing.Color.Black;
+            this.rdoChickenBuger.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rdoChickenBuger.Location = new System.Drawing.Point(6, 293);
             this.rdoChickenBuger.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rdoChickenBuger.Name = "rdoChickenBuger";
@@ -187,12 +191,13 @@
             this.rdoChickenBuger.TabStop = true;
             this.rdoChickenBuger.Text = "치킨버거";
             this.rdoChickenBuger.UseVisualStyleBackColor = true;
+            this.rdoChickenBuger.CheckedChanged += new System.EventHandler(this.rdoChickenBuger_CheckedChanged);
             // 
             // rdoBulgogiBuger
             // 
             this.rdoBulgogiBuger.AutoSize = true;
             this.rdoBulgogiBuger.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoBulgogiBuger.ForeColor = System.Drawing.Color.Black;
+            this.rdoBulgogiBuger.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.rdoBulgogiBuger.Location = new System.Drawing.Point(6, 174);
             this.rdoBulgogiBuger.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rdoBulgogiBuger.Name = "rdoBulgogiBuger";
@@ -201,9 +206,11 @@
             this.rdoBulgogiBuger.TabStop = true;
             this.rdoBulgogiBuger.Text = "불고기버거";
             this.rdoBulgogiBuger.UseVisualStyleBackColor = true;
+            this.rdoBulgogiBuger.CheckedChanged += new System.EventHandler(this.rdoBulgogiBuger_CheckedChanged);
             // 
             // lbOrders
             // 
+            this.lbOrders.BackColor = System.Drawing.Color.Silver;
             this.lbOrders.Font = new System.Drawing.Font("굴림", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbOrders.FormattingEnabled = true;
             this.lbOrders.ItemHeight = 27;
@@ -218,7 +225,7 @@
             // 
             this.chkPotato.AutoSize = true;
             this.chkPotato.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.chkPotato.ForeColor = System.Drawing.Color.Black;
+            this.chkPotato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.chkPotato.Location = new System.Drawing.Point(15, 46);
             this.chkPotato.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chkPotato.Name = "chkPotato";
@@ -226,12 +233,13 @@
             this.chkPotato.TabIndex = 0;
             this.chkPotato.Text = "감자튀김";
             this.chkPotato.UseVisualStyleBackColor = true;
+            this.chkPotato.CheckedChanged += new System.EventHandler(this.chkPotato_CheckedChanged);
             // 
             // chkCola
             // 
             this.chkCola.AutoSize = true;
             this.chkCola.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.chkCola.ForeColor = System.Drawing.Color.Black;
+            this.chkCola.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.chkCola.Location = new System.Drawing.Point(15, 103);
             this.chkCola.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chkCola.Name = "chkCola";
@@ -239,13 +247,13 @@
             this.chkCola.TabIndex = 1;
             this.chkCola.Text = "콜라";
             this.chkCola.UseVisualStyleBackColor = true;
-            this.chkCola.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.chkCola.CheckedChanged += new System.EventHandler(this.chkCola_CheckedChanged);
             // 
             // chkCheese
             // 
             this.chkCheese.AutoSize = true;
             this.chkCheese.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.chkCheese.ForeColor = System.Drawing.Color.Black;
+            this.chkCheese.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.chkCheese.Location = new System.Drawing.Point(15, 160);
             this.chkCheese.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chkCheese.Name = "chkCheese";
@@ -253,12 +261,13 @@
             this.chkCheese.TabIndex = 2;
             this.chkCheese.Text = "치즈　추가";
             this.chkCheese.UseVisualStyleBackColor = true;
+            this.chkCheese.CheckedChanged += new System.EventHandler(this.chkCheese_CheckedChanged);
             // 
             // chkSauce
             // 
             this.chkSauce.AutoSize = true;
             this.chkSauce.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.chkSauce.ForeColor = System.Drawing.Color.Black;
+            this.chkSauce.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.chkSauce.Location = new System.Drawing.Point(15, 214);
             this.chkSauce.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.chkSauce.Name = "chkSauce";
@@ -266,16 +275,18 @@
             this.chkSauce.TabIndex = 3;
             this.chkSauce.Text = "소스　추가";
             this.chkSauce.UseVisualStyleBackColor = true;
+            this.chkSauce.CheckedChanged += new System.EventHandler(this.chkSauce_CheckedChanged);
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.chkPotato);
             this.groupBox2.Controls.Add(this.chkSauce);
             this.groupBox2.Controls.Add(this.chkCola);
             this.groupBox2.Controls.Add(this.chkCheese);
-            this.groupBox2.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Red;
-            this.groupBox2.Location = new System.Drawing.Point(335, 111);
+            this.groupBox2.Font = new System.Drawing.Font("굴림", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(335, 220);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -287,10 +298,11 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.lbOrders);
             this.groupBox3.Controls.Add(this.lbTotalAmount);
-            this.groupBox3.Font = new System.Drawing.Font("굴림", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox3.ForeColor = System.Drawing.Color.Red;
+            this.groupBox3.Font = new System.Drawing.Font("굴림", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(531, 12);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
@@ -306,6 +318,8 @@
             this.AcceptButton = this.btnOrder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::BurgerKiosk.Properties.Resources.백지헌;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(937, 499);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -317,6 +331,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "Buger Kiosk";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
